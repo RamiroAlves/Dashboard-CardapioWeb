@@ -1,0 +1,97 @@
+.title{
+    color: #8c0404 !important;
+    font-family: Oswald, sans-serif !important;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+nav.navbar{
+    margin: 0;
+    border-radius: 0;
+}
+.navbar-toggle{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-menu.active{
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a{
+    text-decoration: none;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.nomeCliente{
+    color: #8c0404 !important;
+    font-family: avenir, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 200 !important;
+}
+
+.divisor{
+    border-right: 3px solid #8c0404;
+    height: 40px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.img{
+    border-radius: 50%;
+    image-rendering: pixelated;
+    margin-left: 10px;
+    margin-right: 0;
+    width: 5vw;
+    height: 9vh;
+}
+
+hr{
+    height: 5px !important;
+    color: #8c0404;
+    opacity: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+}
